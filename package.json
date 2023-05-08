@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
@@ -14,14 +17,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "-": "^0.0.1",
     "@fastify/cookie": "^8.3.0",
-    "D": "^1.0.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "knex": "^2.4.2",
-    "sqlite3": "^5.1.6",
-    "supertest": "^6.3.3",
+    "pg": "^8.10.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -31,6 +31,8 @@
     "eslint": "^8.39.0",
     "tsup": "^6.7.0",
     "tsx": "^3.12.6",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
     "vitest": "^0.30.1"
   }
 }
